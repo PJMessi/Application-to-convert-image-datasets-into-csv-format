@@ -54,7 +54,7 @@ def convert_to_csv(root, output_file_name):
 
             #the dataset from 46 to 57 (nepali vowels) are different from the rest
             #i.e they are 28 by 28 pixels instead of 32 by 32, and they are black in white, instead of white in black
-            #so converting these data to be same as rest
+            #so converting these data to be same as rest----------------------------------
             if( int(directory[filename_index_start:]) > 45 ):
                 im2 = np.empty((32, 32))   
                 print("This is a vowel")
@@ -67,7 +67,10 @@ def convert_to_csv(root, output_file_name):
 
                 for i in range(len(im2)):
                     for j in range(len(im2[i])):
-                        im2[i][j] = 255 - im2[i][j]                           
+                        im2[i][j] = 255 - im2[i][j]
+
+            #if you are using your own dataset, you're more likely to not have this problem, so you can just comment this portion
+            #-----------------------------------------------------------------------------                      
             
 
             #flattening the array to 1D array
