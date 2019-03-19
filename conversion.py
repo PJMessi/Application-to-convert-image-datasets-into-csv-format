@@ -34,9 +34,10 @@ def convert_to_csv(root, output_file_name):
         #go through each file in that directory
         for file in files:	
 
-            #just displaying the progress in the console
-            print("Converting Dataset:", end = ' ')
             filename_index_start = len(root) + 1
+            
+            #just displaying the progress in the console-------------------------
+            print("Converting Dataset:", end = ' ')
             #'directory' contains the whole path to this current directory
             #i.e '/home/prajwal/Desktop/github/dataset_to_csv/Test/31'
             #directory[filename_index_start:] extracts the current directory name form the 'directory' i.e 31
@@ -45,6 +46,7 @@ def convert_to_csv(root, output_file_name):
             print(no_data_trained, end=' ')
             print("/", end =' ')
             print(len(d_list))
+            #----------------------------------------------------------------------
 
             #reading the image file and extracting its pixels
             im = imread(os.path.join(directory,file))  
