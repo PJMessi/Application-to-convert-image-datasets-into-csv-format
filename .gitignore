@@ -1,7 +1,6 @@
 Test/
 Train/
-test.csv
-train.csv
-nepali_character_recogintion_model.h5
-.ipynb_checkpoints
+Data/
 .vscode
+converted_datasets.csv
+temp.csv

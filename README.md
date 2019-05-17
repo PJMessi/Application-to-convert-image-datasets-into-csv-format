@@ -1,18 +1,16 @@
 # Convert-dataset-to-CSV
 
-<b>Required Libraries</b>
-<ol>
-  <li>Scipy &nbsp; <b>$ pip install scipy</b></li>
-  <li>Pandas &nbsp; <b>$ pip install pandas</b></li>
-  <li>Numpy &nbsp; <b>$pip install numpy</b></li>
-</ol>
-
-<p>I'm using the datasets in test.zip and train.zip and convert them into csv.</p>
-
-<small>Both test.zip and train.zip contain the handwritten nepali character datas. They each contain 58 folders with folder name 0 to 57. Folder 0 to 9 contains the data for nepali digit 0 to 9. Folder 10 to 45 contains the data for nepali consonant 'kaa' to 'gya'. Folder 46 to 57 contain data for nepali vowels 'aaa' to 'aah'</small>
-
-<p>You can use your own dataset. But if you want to use mine, <b>Extract the test.zip and train.zip in the same directory and run conversion.py</b></p>
-
-<p>I have explained every command inside the conversion.py in details using comments.</p>
-
-<p>I have also included the <b>'test_converted_csv.ipynb'</b> file to test the converted csv file and <b> 'feed_csv_to_model.ipynb'</b>, where i feed the csv to a model. You can run this file using jupyter notebook.</p>
+## Required Libraries:
+1. Scipy *$pip install scipy*
+2. Pandas *$pip install pandas*
+3. Numpy *pip install numpy*   
+   
+I'm using the datasets in 'Data.zip' and convert them into csv.   
+   
+'Data.zip' contains 46 folders. Each folder represents a Nepali character. Folder '0' to Folder '9' contains datasets for Nepali digits. Folder '10' to Folder '45' contains datasets for Nepali Letters. Each folder contains about 1700 datasets.   
+   
+The label for each of those datasets will be their corresponding parent folder name.   
+   
+In order to use your own datasets, give its path in 'root' variable in line 72   
+   
+Run 'conversion.py' to see the results.
