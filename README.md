@@ -3,7 +3,7 @@
 ## Required Libraries:
 1. Scipy *$pip install scipy*
 2. Pandas *$pip install pandas*
-3. Numpy *pip install numpy*   
+3. Numpy *$pip install numpy*   
    
 I'm using the datasets in 'Data.zip' and convert them into csv.   
    
@@ -13,4 +13,4 @@ The label for each of those datasets will be their corresponding parent folder n
    
 In order to use your own datasets, give its path in 'root' variable in line 72   
    
-Run 'conversion.py' to see the results.
+Just unzip 'Data.zip' and run 'conversion.py' to see the results.
